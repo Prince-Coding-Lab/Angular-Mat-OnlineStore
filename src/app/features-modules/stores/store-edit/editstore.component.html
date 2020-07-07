@@ -1,0 +1,13 @@
+<form class="example-form" [formGroup]="editStoreForm">
+  <mat-form-field class="example-full-width">
+    <mat-label>Store Name</mat-label>
+    <input matInput placeholder="Relience" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <mat-label>Store Description</mat-label>
+      <input matInput placeholder="This is the store of Relience industry" formControlName="description">
+    </mat-form-field>
+     
+      <button mat-button (click)="updateStore()">Update</button><button mat-button (click)="onNoClick()">Cancel</button>
+  </form>

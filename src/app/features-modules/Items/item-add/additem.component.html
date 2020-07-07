@@ -1,0 +1,24 @@
+<form [formGroup]="addItemForm" autocomplete="off">
+    <mat-form-field appearance="fill">
+        <mat-label>Store</mat-label>
+        <select matNativeControl formControlName="storeId" >
+          <option *ngFor="let store of stores" value={{store.id}}>{{store.name}}</option>
+        </select>
+      </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Item Name</mat-label>
+        <input matInput placeholder="Brush" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Item Description</mat-label>
+        <input matInput placeholder="This is item is related to toothbrush" formControlName="description">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Item Price</mat-label>
+        <input matInput placeholder="Enter price of item" formControlName="price">
+    </mat-form-field>
+    <button mat-button (click)="addItem()">Add</button>
+    
+    <!-- <button mat-button (click)="onNoClick()">Cancel</button> -->
+</form>

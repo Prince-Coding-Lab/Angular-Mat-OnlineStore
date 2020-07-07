@@ -1,0 +1,19 @@
+<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<button mat-button routerLink="/home">Home</button>
+
+<button mat-button routerLink="/stores" >Stores</button>
+
+<button mat-button routerLink="/items" routerLinkActive="active">Items</button>
+
+
+
+<button mat-button routerLink="/contactus">Contact Us</button>
+<div *ngIf="isAuthenticated">
+    <mat-label style="float: right;">Welcome {{userName}}</mat-label>
+    <button mat-button style="float: right;" (click)="logout()">Logout</button>
+</div>
+<div *ngIf="!isAuthenticated">
+    <button mat-button style="float: right;" (click)="login()">Login</button>
+</div>
+<i class="material-icons md-dark" style="float: right;">face</i>
+<router-outlet></router-outlet>
