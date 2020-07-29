@@ -51,9 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
   ],
   imports: [
-    BrowserModule,
     RouterModule,
-    BrowserAnimationsModule,
+   // BrowserAnimationsModule,
     A11yModule,
     ClipboardModule,
     HttpClientModule,

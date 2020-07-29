@@ -6,14 +6,14 @@ import { HomeComponent } from '../app/home/home.component';
 import { ContactUsComponent } from '../app/contactus/contactus.component';
 
 const routes: Routes = [
-// { path: 'stores', component: StoresComponent },
-// { path: 'items', component: ItemsComponent },
-{ path: 'home', component: HomeComponent },
-{ path: 'contactus', component: ContactUsComponent },
-{
-  path: 'features-modules',
-  loadChildren: () => import('../app/features-modules/features-modules.module').then(m => m.FeaturesModulesModule)
-}];
+  //   { path: 'stores', component: StoresComponent },
+  //   { path: 'items', component: ItemsComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contactus', component: ContactUsComponent },
+  {
+    path: 'features',
+    loadChildren: () => import('../app/features-modules/features-modules.module').then(m => m.FeaturesModulesModule)
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

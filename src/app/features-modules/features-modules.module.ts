@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { FeaturesModulesRoutingModule } from './features-modules-routing.module';
 
 @NgModule({
@@ -8,6 +7,6 @@ import { FeaturesModulesRoutingModule } from './features-modules-routing.module'
     CommonModule,
     FeaturesModulesRoutingModule
   ],
-  declarations: [ FeaturesModulesRoutingModule.components ]
+  declarations: [FeaturesModulesRoutingModule.components]
 })
 export class FeaturesModulesModule { }
